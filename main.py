@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import datetime
 
 app = Flask(__name__)
 
@@ -9,7 +10,8 @@ def route_index():
 
 @app.after_request
 def add_header(response):
-    response.cache_control.max_age = 300
+    expiry_time = datetime.datetime.utcnow() + datetime.timedelta(100)
+    response.headers["Expires"] = expiry_time.strftime("%a, %d %b %Y %H:%M:%S GMT")
     return response
 
 if __name__ == '__main__':
