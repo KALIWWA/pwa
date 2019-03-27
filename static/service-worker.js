@@ -2,9 +2,9 @@ const CACHE_NAME = 'wpisz-tutaj-dowolny-string';
 
 // List of files which are store in cache.
 let filesToCache = [
-	'/index.html',
-	'/hello-world.css',
-	'/main.js'
+	'/static/index-static.html',
+	'/static/hello-world.css',
+	'/static/main.js'
 ];
 
 self.addEventListener('install', function (evt) {
