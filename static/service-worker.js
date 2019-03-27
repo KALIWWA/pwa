@@ -2,7 +2,7 @@ const CACHE_NAME = 'wpisz-tutaj-dowolny-string';
 
 // List of files which are store in cache.
 let filesToCache = [
-	'/index.html',
+	'/',
 	'/static/hello-world.css',
 	'/static/main.js',
 	'/static/index-static.html'
