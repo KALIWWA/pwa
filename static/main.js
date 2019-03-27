@@ -1,4 +1,4 @@
-const PATH = '/static/sw.js';
+const PATH = 'sw.js';
 
 let isServiceWorkersSupport = ('serviceWorker' in navigator);
 

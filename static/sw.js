@@ -5,8 +5,7 @@ let filesToCache = [
 	'/',
 	'/static/hello-world.css',
 	'/static/main.js',
-	'/static/index-static.html',
-	'/static/sw.js'
+	'/static/index-static.html'
 ];
 
 self.addEventListener('install', function (evt) {
