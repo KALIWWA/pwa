@@ -13,7 +13,7 @@ def add_header(response):
     expiry_time = datetime.datetime.utcnow() + datetime.timedelta(100)
     modify_time = datetime.datetime.utcnow()
     response.headers["Expires"] = expiry_time.strftime("%a, %d %b %Y %H:%M:%S GMT")
-    response.headers["Last Modified"] = modify_time.strftime("%a, %d %b %Y %H:%M:%S GMT")
+    response.headers["Last-Modified"] = modify_time.strftime("%a, %d %b %Y %H:%M:%S GMT")
     response.headers["Etag"] = 'jsjfujeffwe87ytybyy'
     return response
 
